@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GWA Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen p-4 md:p-8">
+    <div class="max-w-3xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-xl p-6 md:p-8">
+            <div class="text-center mb-8">
+                <h1 class="text-3xl font-bold text-gray-800 mb-2">GWA Calculator</h1>
+                <p class="text-gray-500">Calculate your General Weighted Average</p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="grid grid-cols-6 gap-4 px-4 py-2 text-sm font-semibold text-gray-600 border-b border-gray-100">
+                    <div class="col-span-3">SUBJECT</div>
+                    <div class="text-center">UNITS</div>
+                    <div class="col-span-2 text-center">GRADE</div>
+                </div>
+
+                <div id="subjects" class="space-y-3"></div>
+
+                <div class="mt-8 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-6">
+                    <div class="text-center">
+                        <h2 class="text-xl font-semibold text-gray-700 mb-4">Calculation Results</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-white rounded-lg p-4 shadow-sm">
+                                <p class="text-sm text-gray-500 mb-1">Total Units</p>
+                                <p class="text-xl font-bold text-gray-800" id="totalUnits">23</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 shadow-sm">
+                                <p class="text-sm text-gray-500 mb-1">Weighted Sum</p>
+                                <p class="text-xl font-bold text-gray-800" id="weightedSum">0.00</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4 shadow-sm">
+                                <p class="text-sm text-gray-500 mb-1">GWA</p>
+                                <p class="text-xl font-bold text-blue-600" id="gwa">0.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
